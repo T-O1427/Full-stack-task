@@ -1,0 +1,89 @@
+[
+  {
+    "name": "John Doe",
+    "id": "40645e1k80m3nqw",
+    "albums": [
+      {
+        "id": "40645c1k80m3tpg",
+        "name": "The Wall",
+        "year": 2020,
+        "artist": "The Cure",
+        "numberOfTracks": 11
+      },
+      {
+        "id": "40645j1k80m9lxq",
+        "name": "The Floor",
+        "year": 2020,
+        "artist": "The Script",
+        "numberOfTracks": 6
+      },
+      {
+        "id": "4064521k80mzbnc",
+        "name": "The Carpet",
+        "year": 2020,
+        "artist": "The Vacuum",
+        "numberOfTracks": 6
+      }
+    ],
+    "loanedAlbums": [
+      {
+        "transactionId": "40645p1k80m9g2w",
+      "albumId": "40645c1k80m3tpg",
+      "userName": "Steven Grant",
+        "date": "19-03-2018"
+    },
+      {
+        "transactionId": "4064501k80m9yuj",
+        "albumId": "40645j1k80m9lxq",
+        "userId": "Rick Astley",
+        "date": "17-01-2018"
+      }
+    ]
+  },
+  {
+    "name": "Steven Grant",
+    "id": "40645d1k80no0l4",
+    "albums": [
+      {
+        "id": "ef0ex1k80mbwvy",
+        "name": "The Shed",
+        "year": 2020,
+        "artist": "The Patio",
+        "numberOfTracks": 13
+      },
+      {
+        "id": "ef0ey1k80mbmow",
+        "name": "The Porch",
+        "year": 2020,
+        "artist": "The Stairs",
+        "numberOfTracks": 16
+      }
+    ]
+  },
+  {
+    "name": "Rick Astley",
+    "id": "ef0ez1k80mb0uj",
+    "albums": [
+      {
+        "id": "40645o1k80mb4s9",
+        "name": "The Desk",
+        "year": 2020,
+        "artist": "IKEA",
+        "numberOfTracks": 15
+      },
+      {
+        "id": "40645w1k80mb8hh",
+        "name": "The Light",
+        "year": 2020,
+        "artist": "The Lamp",
+        "numberOfTracks": 5
+      }
+    ],
+    "loanedAlbums": {
+      "transactionId": "4064501k80mbc9l",
+      "albumId": "ef0ex1k80mbwvy",
+      "userId": "Steven Grant",
+      "date": "23-09-2016"
+    }
+  }
+]
