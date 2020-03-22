@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -25,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Fullstack app</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,64 +40,55 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-</html>
-=======
-<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Nova Futur Task</title>
-</head>
-<body>
-<div id="root"></div>
-</body>
-</html>
 
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Awesome Search Bar!</title>
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            padding: 10px;
-            background-color: #F4F4F4;
-        }
+      body {
+        font-family: Arial;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #ffa41e;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+
+      form.example button:hover {
+        background: #0b7dda;
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
-</head>
+  </head>
+  <body>
+  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
 
-<body>
-<form>
-    <div id="mainContent">
-        <input placeholder="Search here..." type=text>
-        <style>
-            input[type=text] {
-                width: 260px;
-                padding: 5px;
-                outline: none;
-                border: 3px solid #999999;
-                border-radius: 5px;
-                margin-top: 25px;
-                object-position: top;
-                background-color: #FBFBFB;
-                font-family: Cambria, Cochin, Georgia, serif;
-                font-size: 16px;
-                background-image: url('//www.kirupa.com/images/search.png');
-                background-position: 240px -10px;
-                background-repeat: no-repeat;
-            }
-            input[type=text]:focus {
-                background-color: #FFFFFF;
-                border-color: #333333;
-                box-shadow: 0px 0px 25px -2px #333;
-            }
-        </style>
-
-<br>
-    </div>
-</form>
-</body>
 </html>
->>>>>>> a4799672e978523415da7c679de19e53b7bf289d
