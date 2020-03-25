@@ -1,5 +1,6 @@
 const express = require('express');
 const FileSystem = require('fs');
+const cors = require('cors');
 const app = express();
 
 // import morgan package
@@ -14,6 +15,7 @@ const bodyParser = require('body-parser');
 // let's use it
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get("/user/:id", (req, res, next) => {
     let rawdata = FileSystem.readFileSync('data.json');
@@ -23,8 +25,13 @@ app.get("/user/:id", (req, res, next) => {
         if (users[i].id === req.params.id) {
             response = users[i];
             break;
+        /** If we didnt got a result based on id match, we can check for a result based on user name */
+        } else if (users[i].name === req.params.id) {
+            response = users[i];
+            break;
         }
     }
+
     res.json(response);
 });
 
@@ -117,6 +124,8 @@ app.get("/user/:id/albums/loans/:username", (req, res, next) => {
     res.json(response);
 });
 
-app.listen(3000, () => console.log(`Example app listening on port ${3000}!`));
+let port = 3020;
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 //export app
 module.exports = app;

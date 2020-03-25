@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
+import UserComponent from './components/user.Component';
+import './external/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <h1>Nova Futur React App</h1>
+    <div className="App container-fluid">
+      {/*<header className="App-header">*/}
+      {/*    <h1>Nova Futur React App</h1>*/}
+      {/*</header>*/}
 
-      </header>
+        <h2><em>Welcome to the album library</em></h2>
+        <UserComponent></UserComponent>
     </div>
   );
 }
