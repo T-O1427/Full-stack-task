@@ -78,8 +78,10 @@ app.post("/user/:id/albums/:albumId/loan", (req, res, next) => {
                     if (!Array.isArray(users[i].albums[k].loans)) {
                         users[i].albums[k].loans = [];
                     }
-
-                    users[i].albums[k].loans.push({userName: payload.username, date: payload.date});
+                    console.log(payload);
+                    console.log(users[i]);
+                    console.log(users[i].albums[k]);
+                    users[i].albums[k].loans.push({userName: payload.userName, date: payload.date});
                     response = users[i].albums[k];
                     break;
                 }
@@ -105,6 +107,7 @@ app.post("/user/:id/albums/:albumId/loan", (req, res, next) => {
 app.get("/user/:id/albums/loans/:username", (req, res, next) => {
     let rawdata = FileSystem.readFileSync('data.json');
     let users = JSON.parse(rawdata);
+    console.log(req.params.username);
     let response = [];
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === req.params.id) {
@@ -114,6 +117,7 @@ app.get("/user/:id/albums/loans/:username", (req, res, next) => {
                 }
                 for (let l = 0; l < users[i].albums[k].loans.length; l++) {
                     if (users[i].albums[k].loans[l].userName === req.params.username) {
+                        users[i].albums[k].dateOfReturn = users[i].albums[k].loans[l].date;
                         response.push(users[i].albums[k]);
                         break;
                     }
@@ -121,6 +125,7 @@ app.get("/user/:id/albums/loans/:username", (req, res, next) => {
             }
         }
     }
+    console.log(response);
     res.json(response);
 });
 

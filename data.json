@@ -13,6 +13,14 @@
                     {
                         "userName": "Steven Grant",
                         "date": "19-03-2018"
+                    },
+                    {
+                        "userName": "dfvaf",
+                        "date": "2020-03-12"
+                    },
+                    {
+                        "userName": "fdafafda",
+                        "date": "2020-03-11"
                     }
                 ]
             },
@@ -26,6 +34,10 @@
                     {
                         "userName": "Rick Astley",
                         "date": "17-01-2018"
+                    },
+                    {
+                        "userName": "fdafad",
+                        "date": "2020-03-05"
                     }
                 ]
             },
@@ -34,7 +46,72 @@
                 "name": "The Carpet",
                 "year": 2020,
                 "artist": "The Vacuum",
-                "numberOfTracks": 6
+                "numberOfTracks": 6,
+                "loans": [
+                    {
+                        "userName": "fdafad",
+                        "date": "2020-03-05"
+                    },
+                    {
+                        "userName": "dafda",
+                        "date": "2020-03-06"
+                    }
+                ]
+            },
+            {
+                "id": "40645c1k80m3tpg",
+                "name": "The Wall",
+                "year": 2020,
+                "artist": "The Cure",
+                "numberOfTracks": 11,
+                "loans": [
+                    {
+                        "userName": "Steven Grant",
+                        "date": "19-03-2018"
+                    },
+                    {
+                        "userName": "dfvaf",
+                        "date": "2020-03-12"
+                    },
+                    {
+                        "userName": "fdafafda",
+                        "date": "2020-03-11"
+                    }
+                ]
+            },
+            {
+                "id": "40645j1k80m9lxq",
+                "name": "The Floor",
+                "year": 2020,
+                "artist": "The Script",
+                "numberOfTracks": 6,
+                "loans": [
+                    {
+                        "userName": "Rick Astley",
+                        "date": "17-01-2018"
+                    },
+                    {
+                        "userName": "fdafad",
+                        "date": "2020-03-05"
+                    }
+                ]
+            },
+            {
+                "id": "4064521k80mzbnc",
+                "name": "The Carpet",
+                "year": 2020,
+                "artist": "The Vacuum",
+                "numberOfTracks": 6,
+                "loans": [
+                    {
+                        "userName": "fdafad",
+                        "date": "2020-03-05"
+                    },
+                    {
+                        "userName": "dafda",
+                        "date": "2020-03-06"
+                    }
+                ]
             }
         ]
     },

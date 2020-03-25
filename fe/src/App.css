@@ -11,12 +11,20 @@
 
 .App-header {
    width: 100%;
-  height: 75px;
-  margin-top: -25px;
   background-color: #ffa41e;
-  text-align: left;
+  text-align: center;
   font-size: 25px;
+  padding: 13px;
+  margin-bottom: 25px;
  }
+
+.App-header img {
+  width: 200px;
+}
+
+body {
+  background-color: #EFEFEF;
+}
 
 .Body {
   text-align: center;
