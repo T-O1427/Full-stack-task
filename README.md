@@ -22,4 +22,4 @@ Run npm start in two different consoles in order to run both frontend and backen
 
 * Steven Grant
 * Rick Astley
-* John Doe
+* John Doe 
